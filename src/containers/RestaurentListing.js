@@ -12,10 +12,10 @@ const RestaurentListing = () => {
     const dispatch = useDispatch();
    
    
-    const fetchRestaurents = async (props) => {
+    const fetchRestaurents = async () => {
         
         const response = await axios
-            .get("/breweries?name="+props)
+            .get("/breweries")
             .catch((error)=> {
             console.log("Error ",error);
         });
@@ -32,12 +32,12 @@ const RestaurentListing = () => {
     return (
         <div className="ui container">
             <h2>Restaurent Listing</h2>
-            <div className="ui action input">
+            { /*<div className="ui action input">
                 <input type="text"  onChange={(event) => fetchRestaurents(event.target.value)} placeholder="Search..."/>
                 <button className="ui icon button" >
                 <i className="search icon"></i>
                 </button>
-            </div>
+    </div> */ }
             { /* <SearchComponent /> */}
             <RestaurentComponent /> 
         </div>
