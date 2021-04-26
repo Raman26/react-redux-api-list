@@ -5,10 +5,10 @@ export const setRestaurents = (restaurents) => {
         payload:restaurents,
     };
 };
-
-export const searchRestaurent = (restaurents, name) => {
+/*
+export const searchRestaurent = (restaurents) => {
     return {
         type:ActionTypes.SEARCH_RESTAURENTS,
         payload:restaurents,
     };
-};
+}; */

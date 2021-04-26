@@ -12,6 +12,7 @@ export const restaurentReducer = (state = initialState, { type, payload }) => {
     }
 }
 
+/*
 export const searchRestaurentReducer = (state = {}, action) => {
     switch (action.type) {
         case ActionTypes.SEARCH_RESTAURENTS:
@@ -23,3 +24,5 @@ export const searchRestaurentReducer = (state = {}, action) => {
             return state;
     }
 }
+
+*/
